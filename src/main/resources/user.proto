@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-package com.sample.javastubs;
+package com.example.javastubs;
 
 service userService
 {

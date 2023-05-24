@@ -1,4 +1,4 @@
-package com.sample.javastubs;
+package com.example.javastubs;
 
 import static io.grpc.MethodDescriptor.generateFullMethodName;
 import static io.grpc.stub.ClientCalls.asyncBidiStreamingCall;
@@ -24,33 +24,33 @@ public final class userServiceGrpc {
 
   private userServiceGrpc() {}
 
-  public static final String SERVICE_NAME = "com.sample.javastubs.userService";
+  public static final String SERVICE_NAME = "com.example.javastubs.userService";
 
   // Static method descriptors that strictly reflect the proto.
-  private static volatile io.grpc.MethodDescriptor<com.sample.javastubs.User.LoginRequest,
-      com.sample.javastubs.User.APIResponse> getLoginMethod;
+  private static volatile io.grpc.MethodDescriptor<com.example.javastubs.User.LoginRequest,
+      com.example.javastubs.User.APIResponse> getLoginMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "login",
-      requestType = com.sample.javastubs.User.LoginRequest.class,
-      responseType = com.sample.javastubs.User.APIResponse.class,
+      requestType = com.example.javastubs.User.LoginRequest.class,
+      responseType = com.example.javastubs.User.APIResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<com.sample.javastubs.User.LoginRequest,
-      com.sample.javastubs.User.APIResponse> getLoginMethod() {
-    io.grpc.MethodDescriptor<com.sample.javastubs.User.LoginRequest, com.sample.javastubs.User.APIResponse> getLoginMethod;
+  public static io.grpc.MethodDescriptor<com.example.javastubs.User.LoginRequest,
+      com.example.javastubs.User.APIResponse> getLoginMethod() {
+    io.grpc.MethodDescriptor<com.example.javastubs.User.LoginRequest, com.example.javastubs.User.APIResponse> getLoginMethod;
     if ((getLoginMethod = userServiceGrpc.getLoginMethod) == null) {
       synchronized (userServiceGrpc.class) {
         if ((getLoginMethod = userServiceGrpc.getLoginMethod) == null) {
           userServiceGrpc.getLoginMethod = getLoginMethod = 
-              io.grpc.MethodDescriptor.<com.sample.javastubs.User.LoginRequest, com.sample.javastubs.User.APIResponse>newBuilder()
+              io.grpc.MethodDescriptor.<com.example.javastubs.User.LoginRequest, com.example.javastubs.User.APIResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(
-                  "com.sample.javastubs.userService", "login"))
+                  "com.example.javastubs.userService", "login"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.sample.javastubs.User.LoginRequest.getDefaultInstance()))
+                  com.example.javastubs.User.LoginRequest.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.sample.javastubs.User.APIResponse.getDefaultInstance()))
+                  com.example.javastubs.User.APIResponse.getDefaultInstance()))
                   .setSchemaDescriptor(new userServiceMethodDescriptorSupplier("login"))
                   .build();
           }
@@ -59,30 +59,30 @@ public final class userServiceGrpc {
      return getLoginMethod;
   }
 
-  private static volatile io.grpc.MethodDescriptor<com.sample.javastubs.User.Empty,
-      com.sample.javastubs.User.APIResponse> getLogoutMethod;
+  private static volatile io.grpc.MethodDescriptor<com.example.javastubs.User.Empty,
+      com.example.javastubs.User.APIResponse> getLogoutMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "logout",
-      requestType = com.sample.javastubs.User.Empty.class,
-      responseType = com.sample.javastubs.User.APIResponse.class,
+      requestType = com.example.javastubs.User.Empty.class,
+      responseType = com.example.javastubs.User.APIResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<com.sample.javastubs.User.Empty,
-      com.sample.javastubs.User.APIResponse> getLogoutMethod() {
-    io.grpc.MethodDescriptor<com.sample.javastubs.User.Empty, com.sample.javastubs.User.APIResponse> getLogoutMethod;
+  public static io.grpc.MethodDescriptor<com.example.javastubs.User.Empty,
+      com.example.javastubs.User.APIResponse> getLogoutMethod() {
+    io.grpc.MethodDescriptor<com.example.javastubs.User.Empty, com.example.javastubs.User.APIResponse> getLogoutMethod;
     if ((getLogoutMethod = userServiceGrpc.getLogoutMethod) == null) {
       synchronized (userServiceGrpc.class) {
         if ((getLogoutMethod = userServiceGrpc.getLogoutMethod) == null) {
           userServiceGrpc.getLogoutMethod = getLogoutMethod = 
-              io.grpc.MethodDescriptor.<com.sample.javastubs.User.Empty, com.sample.javastubs.User.APIResponse>newBuilder()
+              io.grpc.MethodDescriptor.<com.example.javastubs.User.Empty, com.example.javastubs.User.APIResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(
-                  "com.sample.javastubs.userService", "logout"))
+                  "com.example.javastubs.userService", "logout"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.sample.javastubs.User.Empty.getDefaultInstance()))
+                  com.example.javastubs.User.Empty.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  com.sample.javastubs.User.APIResponse.getDefaultInstance()))
+                  com.example.javastubs.User.APIResponse.getDefaultInstance()))
                   .setSchemaDescriptor(new userServiceMethodDescriptorSupplier("logout"))
                   .build();
           }
@@ -120,15 +120,15 @@ public final class userServiceGrpc {
 
     /**
      */
-    public void login(com.sample.javastubs.User.LoginRequest request,
-        io.grpc.stub.StreamObserver<com.sample.javastubs.User.APIResponse> responseObserver) {
+    public void login(com.example.javastubs.User.LoginRequest request,
+        io.grpc.stub.StreamObserver<com.example.javastubs.User.APIResponse> responseObserver) {
       asyncUnimplementedUnaryCall(getLoginMethod(), responseObserver);
     }
 
     /**
      */
-    public void logout(com.sample.javastubs.User.Empty request,
-        io.grpc.stub.StreamObserver<com.sample.javastubs.User.APIResponse> responseObserver) {
+    public void logout(com.example.javastubs.User.Empty request,
+        io.grpc.stub.StreamObserver<com.example.javastubs.User.APIResponse> responseObserver) {
       asyncUnimplementedUnaryCall(getLogoutMethod(), responseObserver);
     }
 
@@ -138,15 +138,15 @@ public final class userServiceGrpc {
             getLoginMethod(),
             asyncUnaryCall(
               new MethodHandlers<
-                com.sample.javastubs.User.LoginRequest,
-                com.sample.javastubs.User.APIResponse>(
+                com.example.javastubs.User.LoginRequest,
+                com.example.javastubs.User.APIResponse>(
                   this, METHODID_LOGIN)))
           .addMethod(
             getLogoutMethod(),
             asyncUnaryCall(
               new MethodHandlers<
-                com.sample.javastubs.User.Empty,
-                com.sample.javastubs.User.APIResponse>(
+                com.example.javastubs.User.Empty,
+                com.example.javastubs.User.APIResponse>(
                   this, METHODID_LOGOUT)))
           .build();
     }
@@ -172,16 +172,16 @@ public final class userServiceGrpc {
 
     /**
      */
-    public void login(com.sample.javastubs.User.LoginRequest request,
-        io.grpc.stub.StreamObserver<com.sample.javastubs.User.APIResponse> responseObserver) {
+    public void login(com.example.javastubs.User.LoginRequest request,
+        io.grpc.stub.StreamObserver<com.example.javastubs.User.APIResponse> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(getLoginMethod(), getCallOptions()), request, responseObserver);
     }
 
     /**
      */
-    public void logout(com.sample.javastubs.User.Empty request,
-        io.grpc.stub.StreamObserver<com.sample.javastubs.User.APIResponse> responseObserver) {
+    public void logout(com.example.javastubs.User.Empty request,
+        io.grpc.stub.StreamObserver<com.example.javastubs.User.APIResponse> responseObserver) {
       asyncUnaryCall(
           getChannel().newCall(getLogoutMethod(), getCallOptions()), request, responseObserver);
     }
@@ -207,14 +207,14 @@ public final class userServiceGrpc {
 
     /**
      */
-    public com.sample.javastubs.User.APIResponse login(com.sample.javastubs.User.LoginRequest request) {
+    public com.example.javastubs.User.APIResponse login(com.example.javastubs.User.LoginRequest request) {
       return blockingUnaryCall(
           getChannel(), getLoginMethod(), getCallOptions(), request);
     }
 
     /**
      */
-    public com.sample.javastubs.User.APIResponse logout(com.sample.javastubs.User.Empty request) {
+    public com.example.javastubs.User.APIResponse logout(com.example.javastubs.User.Empty request) {
       return blockingUnaryCall(
           getChannel(), getLogoutMethod(), getCallOptions(), request);
     }
@@ -240,16 +240,16 @@ public final class userServiceGrpc {
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<com.sample.javastubs.User.APIResponse> login(
-        com.sample.javastubs.User.LoginRequest request) {
+    public com.google.common.util.concurrent.ListenableFuture<com.example.javastubs.User.APIResponse> login(
+        com.example.javastubs.User.LoginRequest request) {
       return futureUnaryCall(
           getChannel().newCall(getLoginMethod(), getCallOptions()), request);
     }
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<com.sample.javastubs.User.APIResponse> logout(
-        com.sample.javastubs.User.Empty request) {
+    public com.google.common.util.concurrent.ListenableFuture<com.example.javastubs.User.APIResponse> logout(
+        com.example.javastubs.User.Empty request) {
       return futureUnaryCall(
           getChannel().newCall(getLogoutMethod(), getCallOptions()), request);
     }
@@ -276,12 +276,12 @@ public final class userServiceGrpc {
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
         case METHODID_LOGIN:
-          serviceImpl.login((com.sample.javastubs.User.LoginRequest) request,
-              (io.grpc.stub.StreamObserver<com.sample.javastubs.User.APIResponse>) responseObserver);
+          serviceImpl.login((com.example.javastubs.User.LoginRequest) request,
+              (io.grpc.stub.StreamObserver<com.example.javastubs.User.APIResponse>) responseObserver);
           break;
         case METHODID_LOGOUT:
-          serviceImpl.logout((com.sample.javastubs.User.Empty) request,
-              (io.grpc.stub.StreamObserver<com.sample.javastubs.User.APIResponse>) responseObserver);
+          serviceImpl.logout((com.example.javastubs.User.Empty) request,
+              (io.grpc.stub.StreamObserver<com.example.javastubs.User.APIResponse>) responseObserver);
           break;
         default:
           throw new AssertionError();
@@ -305,7 +305,7 @@ public final class userServiceGrpc {
 
     @java.lang.Override
     public com.google.protobuf.Descriptors.FileDescriptor getFileDescriptor() {
-      return com.sample.javastubs.User.getDescriptor();
+      return com.example.javastubs.User.getDescriptor();
     }
 
     @java.lang.Override
