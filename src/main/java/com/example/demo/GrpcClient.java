@@ -28,7 +28,7 @@ public class GrpcClient {
 		{
 			
 		channel = ManagedChannelBuilder
-				.forAddress("172.30.233.176", 8085).usePlaintext().build();
+				.forAddress("172.30.169.138", 50051).usePlaintext().build();
 		
 		userServiceBlockingStub userStub = userServiceGrpc.newBlockingStub(channel);
 		
